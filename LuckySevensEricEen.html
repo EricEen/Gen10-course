@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Name: Eric Een
+Date Created: 4/2/19
+Most recent revision:4/2/19
+Project: Lucky Sevens
+-->
+<html lang="en">
+<head>
+<title>Lucky Sevens</title>
+<link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+crossorigin="anonymous">
+<script type="text/JavaScript" src="LuckySevensEricEen.js"></script>
+</head>
+
+<body>
+  <h1 style="margin-left:7.5%">Lucky Sevens</h1>
+  <div class="container">
+    <form name="amount" onsubmit="return validateItems();"
+    class="form-inline">
+    <div class="form-group">
+      <label for="num">Starting Bet: &nbsp</label>
+      <input type="number" step="0.01" class="form-horizontal" placeholder="$0.00" id="num">
+    </div>
+    <div>
+    <button type="submit" id="submitButton" class="btn btn-default"
+    style = "margin-left: 7.5%; position:absolute; left:50px; top:105px;"><b>Play</b></button>
+    </div>
+    </form>
+      <hr style="width: 225px; margin-left: 2.5%; position:absolute; top: 140px"/>
+<table id="results" style="display:none;">
+        <thead id="resultsHead">
+            <tr>
+                <th style="text-align:center">Results</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr background-color="gray;">
+                <td>Starting Bet</td>
+                <td><span id="startingBet"></span></td>
+            </tr>
+            <tr>
+                <td>Total Rolls Before Going Broke</td>
+                <td><span id="totRolls"></span></td>
+            </tr>
+            <tr>
+                <td>Highest Amount Won</td>
+                <td><span id="highestWon"></span></td>
+            </tr>
+            <tr>
+                <td>Roll Count at Highest Amount Won &nbsp</td>
+                <td><span id="countAtHighest"></span></td>
+            </tr>
+        </tbody>
+    </table>
+    <style>
+    table {
+      margin-top: 60px;
+    }
+    td {
+      border: 1px solid black;
+      border-collase: collapse;
+    }
+    tbody {
+      border: 2px solid black;
+    }
+    tbody tr:nth-child(1) {
+      background-color: darkgray;
+    }
+    tbody tr:nth-child(2) {
+      background-color: gainsboro;
+    }
+    tbody tr:nth-child(3) {
+      background-color: ghostwhite;
+    }
+    tbody tr:nth-child(4) {
+      background-color: gainsboro;
+    }
+    #resultsHead {
+      font-size: 35px;
+    }
+    </style>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+<html>

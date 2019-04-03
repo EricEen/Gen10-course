@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Contact Us</title>
+
+ <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+ <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+ <style>
+     nav {
+         border-top: thin #5b7d87 solid;
+         border-bottom: thin #5b7d87 solid;
+         padding-top: 12px;
+         padding-bottom: 12px;
+     }
+
+     nav .btn {
+         background-color: #5b7d87;
+         color: #fef9ff;
+     }
+
+     nav .btn:hover {
+         font-weight: bold;
+     }
+
+     .card-header, .card-header .btn {
+         background-color: #5b7d87;
+         color: #fef9ff;
+     }
+
+ </style>
+
+<script type="text/JavaScript" src="RestaurantContactPageEricEen.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+  <!-- Il Ristorante di Primavera is italian for "The Restaurant of Spring" -->
+<header class="jumbotron">
+
+   <h1 style="color:purple; text-align:center;"><b><i>Il Ristorante di Primavera<p style="font-family: Century; font-size: 24px; text-align:center; line-height:150%; margin:0px; color:purple; clear:both;">
+
+&#126;A Fine Dining Experience&#8765;
+
+       </p></i></b></h1>
+   <h3 style="text-transform:uppercase; text-align:left;">New Restaurant Location! Check out our new restaurant — opening in Maple Grove this Spring</h3>
+
+</header>
+
+<nav>
+  <a href="file:///C:/Repos/RestaurantHomePageEricEen.html"><i class="fa fa-home fa-2x"></i></a>
+  <a class="btn badge-pill"  style="vertical-align: text-bottom;" href="file:///C:/Repos/RestaurantMenuPageEricEen.html">Menu</a>
+  <a class="btn badge-pill"  style="vertical-align: text-bottom;" href="file:///C:/Repos/RestaurantContactPageEricEen.html">Contact Us</a>
+</nav>
+
+<div class="container">
+  <form name="contactform" onsubmit="return validateItems(); resetForm()" class="form-incline">
+
+<div style="text-align: center;" class="container">
+<div style="display: inline-block; text-align: right;">
+<p>
+<br>
+<br>
+<div class="form-group">
+<label for="name">Name:&nbsp</label> <input type="text" class="form-control" style="height:30px; width:200px;" id="name">
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="email">Email:&nbsp</label> <input type="text" class="form-control" style="height:30px; width:200px;" id="email"></input>
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="phone">Phone:&nbsp</label> <input type="number" class="form-control" style="height:30px; width:200px;" id="phone"></input>
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="reason">Reason for Inquiry:&nbsp</label>
+<select class="form-control" style="height:40px; width:200px;" id="reason">
+  <option value="Catering">Catering</option>
+  <option value="Private Party">Private Party</option>
+  <option value="Feedback">Feedback</option>
+  <option value="Other">Other</option>
+</select>
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="addinfo">Additional Information:&nbsp</label> <textarea name="text" rows="2" cols="26" wrap="soft" maxlength="40" style="overflow:hidden; resize:none;" type="text" class="form-control" id="addinfo"></textarea>
+</div>
+<br>
+<br>
+<div class="form-group">
+<div style="display: inline-block;">
+<label for="been">Have you been to the restaurant?&nbsp</label>
+<form action="" method="post" style="display: inline-block; width:200px" class="form-control" id="been">
+  <input type="radio" name="NoYes" value="No" /> No
+  <input type="radio" name="NoYes" value="Yes" /> Yes
+</form>
+</div>
+</div>
+<br>
+<br>
+<div class="form-group">
+<label for="best">Best days to contact you:&nbsp</label>
+<form action="" method="post" style="display: inline-block; width:200px" class="form-control" id="best">
+  <input type="checkbox" name="favorite1" value="M" /> M
+  <input type="checkbox" name="favorite2" value="T" /> T
+  <input type="checkbox" name="favorite3" value="W" /> W
+  <input type="checkbox" name="favorite4" value="Th" /> Th
+  <input type="checkbox" name="favorite5" value="F" /> F
+</form>
+</div>
+</p>
+</div>
+</div>
+<div style="text-align:center;">
+
+<button class="btn btn-primary" title="Send Request" type="submit" onClick="location.href=location.href" style="text-align:center;"
+        data-toggle="tooltip" data-placement="top" id="submitb">
+        Send Request
+</button>
+</div>
+
+</form>
+</div>
+
+<footer>
+<hr />
+<div class="row">
+    <div class="col-lg-12" style="text-align: center;">
+      <p>1800 Sylvian Ave, Minneapolis, MN, 55419
+        <br>
+      612-555-1201</p>
+    </div>
+</div>
+</footer>
+
+  </div>
+<!-- CDN links copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
